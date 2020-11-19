@@ -1,0 +1,43 @@
+{
+  "name": "ogenzo-widgets",
+  "version": "1.0.0",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "description": "Ogenzo Payment Node js Module",
+  "scripts": {
+    "test": "start",
+    "start": "ts-node -r tsconfig-paths/register src/main.ts",
+    "dev": "nodemon",
+    "compile": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ogenzo/ogenzo-widgets.git"
+  },
+  "keywords": [
+    "Utility Api",
+    "Payments",
+    "MTN",
+    "Airtel"
+  ],
+  "author": "Kaamuli Anthony Eriya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ogenzo/ogenzo-widgets/issues"
+  },
+  "homepage": "https://github.com/Ogenzo/ogenzo-widgets#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "ts-loader": "^8.0.11",
+    "ts-node": "^9.0.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "libphonenumber-js": "^1.9.4"
+  }
+}
