@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "target": "ES2015",
-    "module": "ES2020",
+    "module": "CommonJS",
     "moduleResolution": "node",
-    "strict": true,
+    "strictNullChecks": false,
+    "strict": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./lib/esm",
@@ -12,5 +13,5 @@
   "include": [
     "./src"
   ],
-  "exclude": ["./src/example.ts"]
+  "exclude": ["src/example/example.ts"]
 }
